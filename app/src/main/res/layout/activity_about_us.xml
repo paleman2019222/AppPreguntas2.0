@@ -19,7 +19,7 @@
         android:background="@drawable/borde"
         android:fontFamily="@font/hanalei_fill"
         android:text="Acerca de"
-        android:textColor="#000000"
+        android:textColor="#FCC316"
         android:textSize="48sp" />
 
     <TextView
@@ -56,16 +56,17 @@
         android:src="@drawable/villano" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button"
-        android:layout_width="171dp"
-        android:layout_height="95dp"
-        android:background="#00FFFFFF"
+        android:id="@+id/btn_menu"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:fontFamily="@font/hanalei_fill"
-        android:text="MENU"
-        android:textColor="#15226C"
-        android:textSize="24sp"
-        app:backgroundTint="#00FFFFFF"
-        app:strokeColor="#00FFFFFF" />
+        android:onClick="toast"
+        android:text="Menú"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:backgroundTint="#333333" />
 
 
 </LinearLayout>
