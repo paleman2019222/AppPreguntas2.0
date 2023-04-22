@@ -12,6 +12,9 @@
         android:theme="@style/Theme.AppPreguntas"
         tools:targetApi="31">
         <activity
+            android:name=".Categorias"
+            android:exported="false" />
+        <activity
             android:name=".AboutUs"
             android:exported="false" />
         <activity
@@ -23,7 +26,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
- <meta-data
+
+        <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>

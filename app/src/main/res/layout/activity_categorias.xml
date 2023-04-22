@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Categorias"
+    android:background="@drawable/degradado">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JUguemos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="34dp"
+        android:fontFamily="@font/hanalei_fill"
+        android:textColor="#fcc316"/>
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        style="@style/MaterialAlertDialog.Material3.Title.Icon"
+        android:id="@+id/et_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:background="@drawable/borde"
+        android:hint="Introduzca su nombre"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/hanalei_fill"
+        android:textSize="24dp"
+        android:textColor="#fcc316"
+        android:textColorHint="#fcc316"/>
+
+    <TextView
+        android:id="@+id/txt_categorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_nombre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/hanalei_fill"
+        android:text="Selecciona una categoria"
+        android:textColor="@color/white"
+        android:textSize="33dp" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:id="@+id/bttn_matematicas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_categorias"
+        android:layout_marginTop="50dp"
+        android:text="matemática"
+        android:fontFamily="@font/hanalei_fill"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:backgroundTint="#333333"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:id="@+id/bttn_nacional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bttn_matematicas"
+        android:layout_marginTop="25dp"
+        android:text="Nacional"
+        android:fontFamily="@font/hanalei_fill"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:backgroundTint="#333333"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:id="@+id/bttn_juegos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bttn_nacional"
+        android:layout_marginTop="25dp"
+        android:text="Juegos"
+        android:fontFamily="@font/hanalei_fill"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:backgroundTint="#333333"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bttn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bttn_juegos"
+        android:layout_marginTop="50dp"
+        android:text="Juegos"
+        android:fontFamily="@font/hanalei_fill"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:backgroundTint="#333333"/>
+</RelativeLayout>

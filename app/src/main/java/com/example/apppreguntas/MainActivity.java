@@ -2,6 +2,7 @@ package com.example.apppreguntas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -15,7 +16,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void toast(View view)
     {
-        Toast.makeText(getApplicationContext(),"hola",Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(getApplicationContext(),Categorias.class);
+        startActivity(intent);
     }
 
 }

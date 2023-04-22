@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:text="PReguntando"
-        android:textColor="#FF8400"
+        android:textColor="#fcc316"
         android:textSize="50dp"
         app:fontFamily="@font/hanalei_fill"
         android:background="@drawable/borde"/>
@@ -30,31 +30,35 @@
         android:fontFamily="@font/hanalei_fill"
         android:onClick="toast"
         android:text="Jugar"
-        android:textColor="#FF8400"
-        android:textSize="30dp" />
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:rippleColor="#FF8400"
+        app:backgroundTint="#333333"/>
 
     <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
         android:id="@+id/bttn_instrucciones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:background="#00FFFFFF"
         android:fontFamily="@font/hanalei_fill"
         android:onClick="toast"
         android:text="Instrucciones"
-        android:textColor="#003B4A"
-        android:textSize="30dp"/>
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:backgroundTint="#333333"/>
 
     <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
         android:id="@+id/bttn_acerca_de"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:background="#00FFFFFF"
         android:fontFamily="@font/hanalei_fill"
         android:onClick="toast"
         android:text="About Us"
-        android:textColor="#003B4A"
-        android:textSize="30dp" />
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:backgroundTint="#333333"/>
 
 </LinearLayout>
