@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/degradado"
     android:gravity="center_horizontal"
     android:hapticFeedbackEnabled="true"
     android:orientation="vertical"
@@ -12,32 +14,47 @@
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:font="fon"
-        android:text="Hello World!" />
+        android:layout_marginTop="100dp"
+        android:text="PReguntando"
+        android:textColor="#FF8400"
+        android:textSize="50dp"
+        app:fontFamily="@font/hanalei_fill"
+        android:background="@drawable/borde"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button"
-        android:layout_width="match_parent"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:id="@+id/bttn_jugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/hanalei_fill"
+        android:onClick="toast"
+        android:text="Jugar"
+        android:textColor="#FF8400"
+        android:textSize="30dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bttn_instrucciones"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:background="#00FFFFFF"
-        android:text="Button"
-        android:textColor="@color/black"
-        app:strokeColor="#00FFFFFF" />
+        android:fontFamily="@font/hanalei_fill"
+        android:onClick="toast"
+        android:text="Instrucciones"
+        android:textColor="#003B4A"
+        android:textSize="30dp"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
+        android:id="@+id/bttn_acerca_de"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Button" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Button" />
+        android:layout_marginTop="100dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/hanalei_fill"
+        android:onClick="toast"
+        android:text="About Us"
+        android:textColor="#003B4A"
+        android:textSize="30dp" />
 
 </LinearLayout>
