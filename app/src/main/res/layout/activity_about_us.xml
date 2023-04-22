@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degradado"
+    android:baselineAligned="false"
+
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".AboutUs">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/borde"
+        android:fontFamily="@font/hanalei_fill"
+        android:text="Acerca de"
+        android:textColor="#000000"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hanalei_fill"
+        android:text="Pedro Canil"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hanalei_fill"
+        android:text="Samuel Citalán"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hanalei_fill"
+        android:text="Pablo Alemán"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="224dp"
+        android:layout_height="281dp"
+        android:src="@drawable/villano" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="171dp"
+        android:layout_height="95dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/hanalei_fill"
+        android:text="MENU"
+        android:textColor="#15226C"
+        android:textSize="24sp"
+        app:backgroundTint="#00FFFFFF"
+        app:strokeColor="#00FFFFFF" />
+
+
+</LinearLayout>
