@@ -15,7 +15,7 @@ public class Primera_Pregunta extends AppCompatActivity {
     TextView Pregunta;
     //respuestas correctas
     String Respuesta_Juego = "zelda";
-    String Respuesta_Mate = "";//
+    String Respuesta_Mate = "x,x + 1,x + 2";//
     String Respuesta_Nac = "";
 
     @Override
@@ -53,6 +53,11 @@ public class Primera_Pregunta extends AppCompatActivity {
             Pregunta.setText("Funciona");//si funciona:)
         }
         cambio_pregunta(num);//llama al metodo de cambio de activity
+    }
+
+    private void texto_mate(){
+        Pregunta.setText("Tres números naturales consecutivos, traducido a lenguaje algebraico es");
+        res1.setText(Respuesta_Mate);
     }
 
 
