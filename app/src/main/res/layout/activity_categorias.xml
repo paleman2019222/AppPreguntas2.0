@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Categorias"
-    android:background="@drawable/degradado">
+    android:background="@drawable/idea_fondo">
 
     <TextView
         android:id="@+id/titulo"

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Primera_Pregunta"
+    android:gravity="center_horizontal"
+    android:background="@drawable/idea_fondo">
+
+
+    <TextView
+        android:id="@+id/pregunta1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:text="Pregunta"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/borde"
+        android:textColor="@color/white"
+        android:textSize="34dp"
+        android:ems="8"
+        android:gravity="center"
+        android:fontFamily="@font/hanalei_fill"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+
+</LinearLayout>

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/idea_fondo"
+    android:background="@drawable/signos_20"
     android:gravity="center_horizontal"
     android:hapticFeedbackEnabled="true"
     android:orientation="vertical"
@@ -33,7 +33,7 @@
         android:textColor="@color/white"
         android:textSize="30dp"
         app:rippleColor="#FF8400"
-        app:backgroundTint="#333333"/>
+        app:backgroundTint="#F21F42"/>
 
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
@@ -46,26 +46,21 @@
         android:text="Instrucciones"
         android:textColor="@color/white"
         android:textSize="30dp"
-        app:backgroundTint="#333333"/>
+        app:backgroundTint="#FF6D00"/>
 
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
         android:id="@+id/bttn_acerca_de"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/hanalei_fill"
         android:onClick="toast"
         android:text="About Us"
         android:textColor="@color/white"
         android:textSize="30dp"
-        app:backgroundTint="#333333"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="?"
-        android:fontFamily="@font/hanalei_fill"
-        android:textSize="24dp"
-        android:textColor="#F72883"/>
+        app:backgroundTint="#0093ED"/>
+
+
 
 </LinearLayout>
