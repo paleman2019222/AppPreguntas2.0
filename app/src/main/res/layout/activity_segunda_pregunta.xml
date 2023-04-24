@@ -5,47 +5,73 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Primera_Pregunta"
+    tools:context=".Segunda_Pregunta"
     android:gravity="center_horizontal"
-    android:background="@drawable/idea_fondo">
-
+    android:background="@drawable/signos_20">
 
     <TextView
-        android:id="@+id/pregunta1"
+        android:id="@+id/pregunta"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
-        android:text="Pregunta"
         android:layout_marginTop="50dp"
         android:background="@drawable/borde"
-        android:textColor="@color/white"
-        android:textSize="34dp"
         android:ems="8"
+        android:fontFamily="@font/hanalei_fill"
         android:gravity="center"
-        android:fontFamily="@font/hanalei_fill"/>
+        android:text="¿quién es el actual presidente de guatemala?"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bttn_respuesta1"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/hanalei_fill"
+        android:onClick="toast"
+        android:text="(a+b) (a-b)"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:backgroundTint="#FF6D00" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bttn_respuesta2"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/hanalei_fill"
+        android:onClick="toast"
+        android:text="alejando jiamatei"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:backgroundTint="#FF6D00" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bttn_respuesta3"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/hanalei_fill"
+        android:onClick="toast"
+        android:text="super mario bros"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:backgroundTint="#FF6D00" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="match_parent"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bttn_respuesta4"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
-
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/hanalei_fill"
+        android:onClick="toast"
+        android:text="respuesta1"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:backgroundTint="#FF6D00" />
 
 </LinearLayout>

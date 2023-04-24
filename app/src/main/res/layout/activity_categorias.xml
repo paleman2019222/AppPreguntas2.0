@@ -51,18 +51,19 @@
         android:textSize="33dp" />
 
     <com.google.android.material.button.MaterialButton
-        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
         android:id="@+id/bttn_matematicas"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/txt_categorias"
-        android:layout_marginTop="50dp"
-        android:text="matemática"
-        android:fontFamily="@font/hanalei_fill"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/hanalei_fill"
+        android:onClick="pregunta"
+        android:text="matemática"
         android:textColor="@color/white"
         android:textSize="30dp"
-        app:backgroundTint="#333333"/>
+        app:backgroundTint="#333333" />
 
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.MaterialComponents.Button.TextButton.Icon"

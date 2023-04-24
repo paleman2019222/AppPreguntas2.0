@@ -12,6 +12,18 @@
         android:theme="@style/Theme.AppPreguntas"
         tools:targetApi="31">
         <activity
+            android:name=".Quinta_Pregunta"
+            android:exported="false" />
+        <activity
+            android:name=".Cuarta_Pregunta"
+            android:exported="false" />
+        <activity
+            android:name=".Tercera_Pregunta"
+            android:exported="false" />
+        <activity
+            android:name=".Segunda_Pregunta"
+            android:exported="false" />
+        <activity
             android:name=".Instrucciones"
             android:exported="false" />
         <activity
