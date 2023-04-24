@@ -98,7 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/bttn_juegos"
         android:layout_marginTop="50dp"
-        android:text="Juegos"
+        android:text="regresar"
         android:fontFamily="@font/hanalei_fill"
         android:layout_centerHorizontal="true"
         android:textColor="@color/white"
