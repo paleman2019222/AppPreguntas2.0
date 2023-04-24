@@ -13,13 +13,16 @@ public class Categorias extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categorias);
     }
-    public void pregunta(View v)
+    private void cambiar(int a)// metodo para cambiar activity a la primera pregunta
     {
         Intent i = new Intent(getApplicationContext(),Primera_Pregunta.class);
+        i.putExtra("categoria",a);//enviamos el dato para el switch
         startActivity(i);
-    }
-    public void categoria(View c){
-
 
     }
+    public void VideoJuegos(View v)
+    {
+        cambiar(3);
+    }
+
 }
