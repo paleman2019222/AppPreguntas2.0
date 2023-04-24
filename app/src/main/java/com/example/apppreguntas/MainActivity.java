@@ -14,9 +14,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void toast(View view)
+    public void  cambio_a_Categorias(View view)
     {
         Intent intent = new Intent(getApplicationContext(),Categorias.class);
+        startActivity(intent);
+    }
+    public void cambio_a_Intrucciones(View view)
+    {
+        Intent intent = new Intent(getApplicationContext(),Instrucciones.class);
+        startActivity(intent);
+    }
+    public void  cambio_a_AboutUs(View view)
+    {
+        Intent intent = new Intent(getApplicationContext(), AboutUs.class);
         startActivity(intent);
     }
 
