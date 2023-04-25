@@ -37,7 +37,7 @@ public class Segunda_Pregunta extends AppCompatActivity {
 
     public void cambio_activity(int punteo)//cambio activity
     {
-        Intent i = new Intent(this, Quinta_Pregunta.class);
+        Intent i = new Intent(this, Tercera_Pregunta.class);
         i.putExtra("punteo", punteo);
         i.putExtra("categoria", categoria);
         startActivity(i);
