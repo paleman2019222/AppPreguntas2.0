@@ -16,7 +16,7 @@ public class Primera_Pregunta extends AppCompatActivity {
     //respuestas correctas
     String Respuesta_Juego = "zelda";
     String Respuesta_Mate = "x,x + 1,x + 2";//
-    String Respuesta_Nac = "";
+    String Respuesta_Nac = "Quetzal";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class Primera_Pregunta extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
          categoria = extras.getInt("categoria");
-         cambio_textos(categoria);
+         cambio_pregunta(categoria);
 
     }
     public void cambio_pregunta(int punteo)//cambio activity
@@ -54,28 +54,29 @@ public class Primera_Pregunta extends AppCompatActivity {
         cambio_pregunta(num);//llama al metodo de cambio de activity
     }
 
-    private void texto_mate(){
-        Pregunta.setText("Tres números naturales consecutivos, traducido a lenguaje algebraico es");
-        res1.setText(Respuesta_Mate);
-    }
-
-
-    private void texto_videojuegos()//cambio de Strings a la categoria juegos
-    {
-        Pregunta.setText("Nombre de personaje que usan para referirse a un link");
-        res3.setText(Respuesta_Juego);
-    }
-    private void cambio_textos(int categoria)//seleccion de categoria
-    {
-        switch(categoria)
-        {
-            case 1:
+    private void cambio_respuestas(int categoría){
+        switch(categoría){
+            case 1: //mate
+                Pregunta.setText("Tres números naturales consecutivos, traducido a lenguaje algebraico es");
+                res1.setText("");
+                res2.setText("");
+                res3.setText("");
+                res4.setText("");
                 break;
-            case 2:
+            case 2: //nacional
+                Pregunta.setText("Nombre de personaje que usan para referirse a un link");
+                res1.setText("Cóndor");
+                res2.setText("Quetzal");
+                res3.setText("Zopilote");
+                res4.setText("Palomas de zona 1");
                 break;
-            case 3:texto_videojuegos();
+            case 3: //juegos
+                Pregunta.setText("¿Cuál es el ave nacional de Guatemala?");
+                res1.setText("Cóndor");
+                res2.setText("Quetzal");
+                res3.setText("Zopilote");
+                res4.setText("Palomas de zona 1");
                 break;
-
         }
     }
 
