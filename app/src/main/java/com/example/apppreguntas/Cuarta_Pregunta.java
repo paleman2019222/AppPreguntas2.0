@@ -17,7 +17,7 @@ public class Cuarta_Pregunta extends AppCompatActivity {
     TextView Pregunta;
 
     //respuestas correctas
-    String Respuesta_Juego = "luigi";
+    String Respuesta_Juego = "puño";
     String Respuesta_Mate = "Aurelio Baldor";//
     String Respuesta_Nac = "Quetzal";
 
@@ -76,11 +76,11 @@ public class Cuarta_Pregunta extends AppCompatActivity {
                 res4.setText("Palomas de zona 1");
                 break;
             case 3: //juegos
-                Pregunta.setText("¿como se llama el hermano de mario en el videojuego Super Mario Bros?");
-                res1.setText("bowser");
-                res2.setText("warrio");
-                res3.setText("liuyi");
-                res4.setText(Respuesta_Juego);
+                Pregunta.setText("¿Con que parte del cuerpo, mario golpea los ladrillos en el videojuego Super Mario Bros?");
+                res1.setText("cabeza");
+                res2.setText(Respuesta_Juego);
+                res3.setText("caparazon");
+                res4.setText("pierna");
                 break;
         }
     }

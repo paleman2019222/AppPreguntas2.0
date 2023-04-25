@@ -13,7 +13,7 @@ public class Quinta_Pregunta extends AppCompatActivity {
     int categoria, punteo;
     TextView Pregunta;
     //respuestas correctas
-    String Respuesta_Juego = "";
+    String Respuesta_Juego = "Tetris";
     String Respuesta_Mate = "";//
     String Respuesta_Nac = "Miguel Ángel Asturias";
     @Override
@@ -69,11 +69,11 @@ public class Quinta_Pregunta extends AppCompatActivity {
                 res4.setText(Respuesta_Nac);
                 break;
             case 3: //juegos
-                Pregunta.setText("");
-                res1.setText("");
-                res2.setText("");
-                res3.setText("");
-                res4.setText("");
+                Pregunta.setText("Juego de logica y baja calidad, donde su atraccion principal son cubos");
+                res1.setText("Geometry dash");
+                res2.setText("mahjong");
+                res3.setText("Minecraft");
+                res4.setText(Respuesta_Juego);
                 break;
         }
     }
