@@ -33,6 +33,7 @@ public class Segunda_Pregunta extends AppCompatActivity {
         categoria = extras.getInt("categoria");
         punteo = extras.getInt("punteo");
         cambio_respuestas(categoria);
+        System.out.println(punteo);
     }
 
     public void cambio_activity(int punteo)//cambio activity
@@ -41,6 +42,7 @@ public class Segunda_Pregunta extends AppCompatActivity {
         i.putExtra("punteo", punteo);
         i.putExtra("categoria", categoria);
         startActivity(i);
+        finish();
     }
 
     public void correcto(View view)//metodo para verificar respuesta

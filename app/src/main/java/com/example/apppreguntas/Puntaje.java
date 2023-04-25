@@ -19,8 +19,9 @@ public class Puntaje extends AppCompatActivity {
         btnMenu = (Button) findViewById(R.id.bttn_menu);
         puntaje = (TextView) findViewById(R.id.puntaje);
         Bundle extras = getIntent().getExtras();
-        categoria = extras.getInt("´punteo");
-        puntaje.setText(punteo);
+
+        punteo = extras.getInt("punteo");
+        puntaje.setText(String.valueOf(punteo));
     }
     public void cambio_activity(View view)//cambio activity
     {

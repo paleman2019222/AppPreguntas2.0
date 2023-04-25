@@ -41,6 +41,7 @@ public class Primera_Pregunta extends AppCompatActivity {
        i.putExtra("punteo",punteo);
        i.putExtra("categoria",categoria);
         startActivity(i);
+        finish();
     }
     public void correcto(View view)//metodo para verificar respuesta
     {
