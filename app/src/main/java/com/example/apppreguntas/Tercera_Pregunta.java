@@ -10,11 +10,11 @@ import android.widget.TextView;
 
 public class Tercera_Pregunta extends AppCompatActivity {
     Button res1,res2,res3,res4;
-    int categoria;
+    int categoria, punteo;
     TextView Pregunta;
     //respuestas correctas
     String Respuesta_Juego = "";
-    String Respuesta_Mate = "";//
+    String Respuesta_Mate = "Tiene un ángulo recto";//
     String Respuesta_Nac = "Alejandro Giammattei";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,7 @@ public class Tercera_Pregunta extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         categoria = extras.getInt("categoria");
+        punteo = extras.getInt("punteo");
         cambio_respuestas(categoria);
     }
 
@@ -47,7 +48,7 @@ public class Tercera_Pregunta extends AppCompatActivity {
         String texto = boton_press.getText().toString();
         if(texto == Respuesta_Juego||texto == Respuesta_Mate||texto == Respuesta_Nac)//verifica si la respuesta es correcta
         {
-            num= 1;//asigna el punteo
+            num = 1 + punteo;//asigna el punteo
         }
         cambio_activity(num);//llama al metodo de cambio de activity
     }
@@ -55,11 +56,11 @@ public class Tercera_Pregunta extends AppCompatActivity {
     private void cambio_respuestas(int categoría){
         switch(categoría){
             case 1: //mate
-                Pregunta.setText("");
-                res1.setText("");
-                res2.setText("");
-                res3.setText(Respuesta_Mate);
-                res4.setText("");
+                Pregunta.setText("Un triángulo rectángulo se llama así porque");
+                res1.setText("Está formado por rectas");
+                res2.setText(Respuesta_Mate);
+                res3.setText("Tiene todos sus ángulos rectos");
+                res4.setText("Así lo quiso Dios");
                 break;
             case 2: //nacional
                 Pregunta.setText("¿Quién es el actual presidente de Guatemala?");
