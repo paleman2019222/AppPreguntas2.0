@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/degradado"
+    android:background="@drawable/idea_fondo"
     android:baselineAligned="false"
 
     android:gravity="center_horizontal"
@@ -62,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:fontFamily="@font/hanalei_fill"
-        android:onClick="toast"
+        android:onClick="regresar"
         android:text="Menú"
         android:textColor="@color/white"
         android:textSize="30dp"
