@@ -13,8 +13,9 @@ public class Quinta_Pregunta extends AppCompatActivity {
     int categoria, punteo;
     TextView Pregunta;
     //respuestas correctas
-    String Respuesta_Juego = "Tetris";
-    String Respuesta_Mate = "";//
+    String Respuesta_Juego = "";
+    String Respuesta_Mate = "0";//
+
     String Respuesta_Nac = "Miguel Ángel Asturias";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,11 +56,11 @@ public class Quinta_Pregunta extends AppCompatActivity {
     private void cambio_respuestas(int categoría){
         switch(categoría){
             case 1: //mate
-                Pregunta.setText("");
-                res1.setText("");
-                res2.setText("");
-                res3.setText("");
-                res4.setText("");
+                Pregunta.setText("La derivada de una constante es igual a");
+                res1.setText("1");
+                res2.setText("Igual a la unidad");
+                res3.setText(Respuesta_Mate);
+                res4.setText("No aprendí derivadas");
                 break;
             case 2: //nacional
                 Pregunta.setText("¿Qué guatemalteco ganó un premio nobel de literatura?");
