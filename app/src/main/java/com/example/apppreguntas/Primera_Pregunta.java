@@ -41,17 +41,18 @@ public class Primera_Pregunta extends AppCompatActivity {
        i.putExtra("punteo",punteo);
        i.putExtra("categoria",categoria);
         startActivity(i);
+        finish();
     }
     public void correcto(View view)//metodo para verificar respuesta
     {
-        int num= 0;//punteo, por defecto no tiene a menos que conteste bien
+        int punteo= 0;//punteo, por defecto no tiene a menos que conteste bien
         Button boton_press = (Button) findViewById(view.getId());
         String texto = boton_press.getText().toString();
         if(texto == Respuesta_Juego||texto == Respuesta_Mate||texto == Respuesta_Nac)//verifica si la respuesta es correcta
         {
-           num= 1;//asigna el punteo
+           punteo= 1;//asigna el punteo
         }
-        cambio_activity(num);//llama al metodo de cambio de activity
+        cambio_activity(punteo);//llama al metodo de cambio de activity
     }
 
     private void cambio_respuestas(int categoría){

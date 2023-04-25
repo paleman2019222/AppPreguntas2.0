@@ -14,6 +14,7 @@ public class Quinta_Pregunta extends AppCompatActivity {
     TextView Pregunta;
     //respuestas correctas
     String Respuesta_Juego = "Tetris";
+
     String Respuesta_Mate = "0";
 
     String Respuesta_Nac = "Miguel Ángel Asturias";
@@ -31,15 +32,18 @@ public class Quinta_Pregunta extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         categoria = extras.getInt("categoria");
+        punteo = extras.getInt("punteo");
         cambio_respuestas(categoria);
+        System.out.println(punteo);
     }
 
     public void cambio_activity(int punteo)//cambio activity
     {
-        Intent i = new Intent(Quinta_Pregunta.this,MainActivity.class);
+        Intent i = new Intent(Quinta_Pregunta.this,Puntaje.class);
         i.putExtra("punteo",punteo);
         i.putExtra("categoria",categoria);
         startActivity(i);
+        finish();
     }
     public void correcto(View view)//metodo para verificar respuesta
     {

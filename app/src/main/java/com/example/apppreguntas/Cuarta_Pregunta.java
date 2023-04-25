@@ -19,7 +19,7 @@ public class Cuarta_Pregunta extends AppCompatActivity {
     //respuestas correctas
     String Respuesta_Juego = "puño";
     String Respuesta_Mate = "Aurelio Baldor";//
-    String Respuesta_Nac = "Quetzal";
+    String Respuesta_Nac = "Dr Ricardo Bressani";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,7 @@ public class Cuarta_Pregunta extends AppCompatActivity {
         categoria = extras.getInt("categoria");
         punteo = extras.getInt("punteo");
         cambio_respuestas(categoria);
+        System.out.println(punteo);
 
     }
 
@@ -45,6 +46,7 @@ public class Cuarta_Pregunta extends AppCompatActivity {
         i.putExtra("punteo", punteo);
         i.putExtra("categoria", categoria);
         startActivity(i);
+        finish();
     }
 
     public void correcto(View view)//metodo para verificar respuesta
@@ -69,11 +71,11 @@ public class Cuarta_Pregunta extends AppCompatActivity {
                 res4.setText("Baldor Constantino");
                 break;
             case 2: //nacional
-                Pregunta.setText("Nombre de personaje que usan para referirse a un link");
-                res1.setText("Cóndor");
-                res2.setText(Respuesta_Nac);
-                res3.setText("Zopilote");
-                res4.setText("Palomas de zona 1");
+                Pregunta.setText("¿Quién inventó la incaparina?");
+                res1.setText("Mi abuelita");
+                res2.setText("Corporación MUltiInversiones");
+                res3.setText(Respuesta_Nac);
+                res4.setText("Dr Manuel Villacorta");
                 break;
             case 3: //juegos
                 Pregunta.setText("¿Con que parte del cuerpo, mario golpea los ladrillos en el videojuego Super Mario Bros?");
