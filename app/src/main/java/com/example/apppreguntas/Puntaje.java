@@ -25,7 +25,7 @@ public class Puntaje extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         punteo = extras.getInt("punteo");
 
-        puntaje.setText(String.valueOf(punteo));
+        puntaje.setText(String.valueOf(punteo*1000));
         name = getIntent().getStringExtra("name");
         titulo.setText(name + "\n tus puntos obtenidos:");
         System.out.println(name);
