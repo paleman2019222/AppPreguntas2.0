@@ -14,7 +14,7 @@ public class Primera_Pregunta extends AppCompatActivity {
     int categoria;
     TextView Pregunta;
     //respuestas correctas
-    String Respuesta_Juego = "zelda";
+    String Respuesta_Juego = "Call of duty";
     String Respuesta_Mate = "1";//
     String Respuesta_Nac = "Quetzal";
 
@@ -66,16 +66,16 @@ public class Primera_Pregunta extends AppCompatActivity {
             case 2: //nacional
                 Pregunta.setText("Nombre de personaje que usan para referirse a un link");
                 res1.setText("Cóndor");
-                res2.setText("Quetzal");
+                res2.setText(Respuesta_Nac);
                 res3.setText("Zopilote");
                 res4.setText("Palomas de zona 1");
                 break;
             case 3: //juegos
-                Pregunta.setText("¿Cuál es el ave nacional de Guatemala?");
-                res1.setText("Cóndor");
-                res2.setText("Quetzal");
-                res3.setText("Zopilote");
-                res4.setText("Palomas de zona 1");
+                Pregunta.setText("¿cuál es el nombre del videojuego que se hizo famiso por la tematica parecida a la segunda guerra mundial?");
+                res1.setText("Free Fire");
+                res2.setText(Respuesta_Juego);
+                res3.setText("PUG mobile");
+                res4.setText("krunkerer");
                 break;
         }
     }
