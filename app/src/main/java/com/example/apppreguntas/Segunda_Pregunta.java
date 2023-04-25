@@ -2,7 +2,10 @@ package com.example.apppreguntas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Segunda_Pregunta extends AppCompatActivity {
@@ -19,6 +22,6 @@ public class Segunda_Pregunta extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         categoria = extras.getInt("punteo");
 
-       tv.setText(String.valueOf(categoria));
     }
+
 }

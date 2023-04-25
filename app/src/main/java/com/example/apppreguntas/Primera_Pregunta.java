@@ -32,10 +32,10 @@ public class Primera_Pregunta extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
          categoria = extras.getInt("categoria");
-         cambio_pregunta(categoria);
+         cambio_respuestas(categoria);
 
     }
-    public void cambio_pregunta(int punteo)//cambio activity
+    public void cambio_activity(int punteo)//cambio activity
     {
        Intent i = new Intent(Primera_Pregunta.this,Segunda_Pregunta.class);
        i.putExtra("punteo",punteo);
@@ -51,7 +51,7 @@ public class Primera_Pregunta extends AppCompatActivity {
         {
            num= 1;//asigna el punteo
         }
-        cambio_pregunta(num);//llama al metodo de cambio de activity
+        cambio_activity(num);//llama al metodo de cambio de activity
     }
 
     private void cambio_respuestas(int categoría){
