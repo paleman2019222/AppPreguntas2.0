@@ -13,7 +13,7 @@ public class Tercera_Pregunta extends AppCompatActivity {
     int categoria, punteo;
     TextView Pregunta;
     //respuestas correctas
-    String Respuesta_Juego = "";
+    String Respuesta_Juego = "zelda";
     String Respuesta_Mate = "Tiene un ángulo recto";//
     String Respuesta_Nac = "Alejandro Giammattei";
     @Override
@@ -74,11 +74,11 @@ public class Tercera_Pregunta extends AppCompatActivity {
                 res4.setText(Respuesta_Nac);
                 break;
             case 3: //juegos
-                Pregunta.setText("");
-                res1.setText("");
-                res2.setText("");
-                res3.setText("");
-                res4.setText("");
+                Pregunta.setText("personaje que es confundido con un 'link'(hipervinculo)");
+                res1.setText(Respuesta_Juego);
+                res2.setText("link");
+                res3.setText("ganon");
+                res4.setText("Hyper");
                 break;
         }
     }
