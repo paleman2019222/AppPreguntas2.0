@@ -27,7 +27,7 @@ public class Puntaje extends AppCompatActivity {
 
         puntaje.setText(String.valueOf(punteo*1000));
         name = getIntent().getStringExtra("name");
-        titulo.setText(name + "\n tus puntos obtenidos:");
+        titulo.setText(name + "\n tus puntos:");
         System.out.println(name);
     }
     public void cambio_activity(View view)//cambio activity
