@@ -58,9 +58,13 @@ public class Tercera_Pregunta extends AppCompatActivity {
             case 1: //mate
                 Pregunta.setText("Un triángulo rectángulo se llama así porque");
                 res1.setText("Está formado por rectas");
+                res1.setTextSize(24);
                 res2.setText(Respuesta_Mate);
+                res2.setTextSize(24);
                 res3.setText("Tiene todos sus ángulos rectos");
+                res3.setTextSize(24);
                 res4.setText("Así lo quiso Dios");
+                res4.setTextSize(24);
                 break;
             case 2: //nacional
                 Pregunta.setText("¿Quién es el actual presidente de Guatemala?");
