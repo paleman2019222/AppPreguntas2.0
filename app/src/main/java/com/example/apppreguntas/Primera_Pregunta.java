@@ -15,7 +15,7 @@ public class Primera_Pregunta extends AppCompatActivity {
     TextView Pregunta;
     //respuestas correctas
     String Respuesta_Juego = "zelda";
-    String Respuesta_Mate = "x,x + 1,x + 2";//
+    String Respuesta_Mate = "1";//
     String Respuesta_Nac = "Quetzal";
 
     @Override
@@ -44,7 +44,7 @@ public class Primera_Pregunta extends AppCompatActivity {
     }
     public void correcto(View view)//metodo para verificar respuesta
     {
-        int num= 0;//punteo, por defecto no tiene amenos que conteste bien
+        int num= 0;//punteo, por defecto no tiene a menos que conteste bien
         Button boton_press = (Button) findViewById(view.getId());
         String texto = boton_press.getText().toString();
         if(texto == Respuesta_Juego||texto == Respuesta_Mate||texto == Respuesta_Nac)//verifica si la respuesta es correcta
@@ -57,11 +57,11 @@ public class Primera_Pregunta extends AppCompatActivity {
     private void cambio_respuestas(int categoría){
         switch(categoría){
             case 1: //mate
-                Pregunta.setText("Tres números naturales consecutivos, traducido a lenguaje algebraico es");
-                res1.setText("");
-                res2.setText("");
-                res3.setText("");
-                res4.setText("");
+                Pregunta.setText("Un número elevado a la potencia 0, da como resultado");
+                res1.setText("El mismo número");
+                res2.setText("0");
+                res3.setText(Respuesta_Mate);
+                res4.setText("Infinito");
                 break;
             case 2: //nacional
                 Pregunta.setText("Nombre de personaje que usan para referirse a un link");
