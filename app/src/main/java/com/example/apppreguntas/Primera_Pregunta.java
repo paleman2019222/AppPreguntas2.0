@@ -71,7 +71,7 @@ public class Primera_Pregunta extends AppCompatActivity {
                 res4.setText("Palomas de zona 1");
                 break;
             case 3: //juegos
-                Pregunta.setText("¿cuál es el nombre del videojuego que se hizo famiso por la tematica parecida a la segunda guerra mundial?");
+                Pregunta.setText("videojuego que se hizo famiso por la tematica parecida a la segunda guerra mundial");
                 res1.setText("Free Fire");
                 res2.setText(Respuesta_Juego);
                 res3.setText("PUG mobile");

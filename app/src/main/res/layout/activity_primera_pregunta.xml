@@ -36,11 +36,6 @@
         android:textSize="30dp"
         app:backgroundTint="#FF6D00"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/hanalei_fill"
-        android:text="zelda" />
 
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.MaterialComponents.Button.TextButton.Icon"

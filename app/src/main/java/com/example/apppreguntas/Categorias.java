@@ -20,9 +20,17 @@ public class Categorias extends AppCompatActivity {
         startActivity(i);
 
     }
-    public void VideoJuegos(View v)
+    public void Seleccion_Categoria(View v)
     {
-        cambiar(3);
+        switch(v.getId())
+        {
+            case R.id.bttn_matematicas: cambiar(1);
+                break;
+            case R.id.bttn_nacional:cambiar(2);
+                break;
+            case R.id.bttn_juegos:cambiar(3);
+                break;
+        }
     }
 
 }
