@@ -17,6 +17,7 @@ public class Primera_Pregunta extends AppCompatActivity {
     String Respuesta_Juego = "Call of duty";
     String Respuesta_Mate = "1";//
     String Respuesta_Nac = "15 de septiembre";
+    String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,8 @@ public class Primera_Pregunta extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
          categoria = extras.getInt("categoria");
+         name = extras.getString("name");
+
          cambio_respuestas(categoria);
 
     }
@@ -40,6 +43,8 @@ public class Primera_Pregunta extends AppCompatActivity {
        Intent i = new Intent(Primera_Pregunta.this,Segunda_Pregunta.class);
        i.putExtra("punteo",punteo);
        i.putExtra("categoria",categoria);
+       i.putExtra("name", name);
+
         startActivity(i);
         finish();
     }

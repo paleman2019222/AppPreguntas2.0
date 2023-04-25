@@ -17,6 +17,7 @@ public class Segunda_Pregunta extends AppCompatActivity {
     String Respuesta_Juego = "luigi";
     String Respuesta_Mate = "Isaac Newton";//
     String Respuesta_Nac = "Quetzal";
+    String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class Segunda_Pregunta extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         categoria = extras.getInt("categoria");
         punteo = extras.getInt("punteo");
+        name = extras.getString("name");
         cambio_respuestas(categoria);
         System.out.println(punteo);
     }
@@ -41,20 +43,21 @@ public class Segunda_Pregunta extends AppCompatActivity {
         Intent i = new Intent(this, Tercera_Pregunta.class);
         i.putExtra("punteo", punteo);
         i.putExtra("categoria", categoria);
+        i.putExtra("name", name);
         startActivity(i);
         finish();
     }
 
     public void correcto(View view)//metodo para verificar respuesta
     {
-        int num = 0;//punteo, por defecto no tiene amenos que conteste bien
+        //int num = 0;//punteo, por defecto no tiene amenos que conteste bien
         Button boton_press = (Button) findViewById(view.getId());
         String texto = boton_press.getText().toString();
         if (texto == Respuesta_Juego || texto == Respuesta_Mate || texto == Respuesta_Nac)//verifica si la respuesta es correcta
         {
-            num = 1 + punteo;//asigna el punteo
+            punteo= 1 + punteo;//asigna el punteo
         }
-        cambio_activity(num);//llama al metodo de cambio de activity
+        cambio_activity(punteo);//llama al metodo de cambio de activity
     }
 
     private void cambio_respuestas(int categoría) {

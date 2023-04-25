@@ -18,6 +18,7 @@ public class Quinta_Pregunta extends AppCompatActivity {
     String Respuesta_Mate = "0";
 
     String Respuesta_Nac = "Miguel Ángel Asturias";
+    String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +34,7 @@ public class Quinta_Pregunta extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         categoria = extras.getInt("categoria");
         punteo = extras.getInt("punteo");
+        name = extras.getString("name");
         cambio_respuestas(categoria);
         System.out.println(punteo);
     }
@@ -42,6 +44,7 @@ public class Quinta_Pregunta extends AppCompatActivity {
         Intent i = new Intent(Quinta_Pregunta.this,Puntaje.class);
         i.putExtra("punteo",punteo);
         i.putExtra("categoria",categoria);
+        i.putExtra("name", name);
         startActivity(i);
         finish();
     }
@@ -52,9 +55,9 @@ public class Quinta_Pregunta extends AppCompatActivity {
         String texto = boton_press.getText().toString();
         if(texto == Respuesta_Juego||texto == Respuesta_Mate||texto == Respuesta_Nac)//verifica si la respuesta es correcta
         {
-            num = 1 + punteo;//asigna el punteo
+            punteo = 1 + punteo;//asigna el punteo
         }
-        cambio_activity(num);//llama al metodo de cambio de activity
+        cambio_activity(punteo);//llama al metodo de cambio de activity
     }
 
     private void cambio_respuestas(int categoría){
