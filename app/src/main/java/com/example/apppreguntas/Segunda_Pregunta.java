@@ -65,7 +65,7 @@ public class Segunda_Pregunta extends AppCompatActivity {
                 res4.setText(Respuesta_Mate);
                 break;
             case 2: //nacional
-                Pregunta.setText("Nombre de personaje que usan para referirse a un link");
+                Pregunta.setText("¿Cuál es el ave nacional de Guatemala?");
                 res1.setText("Cóndor");
                 res2.setText(Respuesta_Nac);
                 res3.setText("Zopilote");

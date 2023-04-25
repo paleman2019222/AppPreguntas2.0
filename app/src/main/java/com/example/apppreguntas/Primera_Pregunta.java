@@ -16,7 +16,7 @@ public class Primera_Pregunta extends AppCompatActivity {
     //respuestas correctas
     String Respuesta_Juego = "Call of duty";
     String Respuesta_Mate = "1";//
-    String Respuesta_Nac = "Quetzal";
+    String Respuesta_Nac = "15 de septiembre";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,11 +64,11 @@ public class Primera_Pregunta extends AppCompatActivity {
                 res4.setText("Infinito");
                 break;
             case 2: //nacional
-                Pregunta.setText("Nombre de personaje que usan para referirse a un link");
-                res1.setText("Cóndor");
-                res2.setText(Respuesta_Nac);
-                res3.setText("Zopilote");
-                res4.setText("Palomas de zona 1");
+                Pregunta.setText("¿En que fecha se celebra la independencia de Guatemala?");
+                res1.setText("25 de diciembre");
+                res2.setText("10 de mayo");
+                res3.setText(Respuesta_Nac);
+                res4.setText("16 de febrero");
                 break;
             case 3: //juegos
                 Pregunta.setText("videojuego que se hizo famiso por la tematica parecida a la segunda guerra mundial");
