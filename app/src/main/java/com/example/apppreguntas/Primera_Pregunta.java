@@ -91,7 +91,7 @@ public class Primera_Pregunta extends AppCompatActivity {
                 res4.setText("Infinito");
                 break;
             case 2: //nacional
-                Pregunta.setText("¿En que fecha se celebra la independencia de Guatemala?");
+                Pregunta.setText("¿En qué fecha se celebra la independencia de Guatemala?");
                 res1.setText("25 de diciembre");
                 res2.setText("10 de mayo");
                 res3.setText(Respuesta_Nac);
