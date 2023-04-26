@@ -18,6 +18,7 @@ public class Puntaje extends AppCompatActivity {
 
     ImageView contento, triste, avergonzado;
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puntaje);
@@ -42,6 +43,7 @@ public class Puntaje extends AppCompatActivity {
     {
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
+        finish();
     }
 
     public void mostrar_imagen(int punteo){

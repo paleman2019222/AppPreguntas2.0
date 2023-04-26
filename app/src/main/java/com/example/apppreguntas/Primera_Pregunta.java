@@ -73,6 +73,7 @@ public class Primera_Pregunta extends AppCompatActivity {
            punteo= 1;//asigna el punteo
             verificador = true;
             toast("¡Respuesta correcta!", verificador);
+
         }else{
             verificador=false;
             toast("¡Respuesta incorrecta!", verificador);
@@ -123,7 +124,7 @@ public class Primera_Pregunta extends AppCompatActivity {
             mensaje.setText(message);
 
             Toast toast = new Toast(getApplicationContext());
-            toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.BOTTOM, 0,200);
+            toast.setGravity(Gravity.CENTER_HORIZONTAL, 0,0);
             toast.setDuration(Toast.LENGTH_SHORT);
             toast.setView(view);
             toast.show();
@@ -134,7 +135,7 @@ public class Primera_Pregunta extends AppCompatActivity {
             mensaje.setText(message);
 
             Toast toast = new Toast(getApplicationContext());
-            toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.BOTTOM, 0,200);
+            toast.setGravity(Gravity.CENTER_HORIZONTAL, 0,0);
             toast.setDuration(Toast.LENGTH_SHORT);
             toast.setView(view);
             toast.show();
