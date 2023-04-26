@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Switch;
@@ -17,7 +18,10 @@ public class Primera_Pregunta extends AppCompatActivity {
     String Respuesta_Juego = "Call of duty";
     String Respuesta_Mate = "1";//
     String Respuesta_Nac = "15 de septiembre";
-    String name;
+    String name;//nombre del jugador
+    int punteo= 0;
+
+    private Handler mHandler = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +42,7 @@ public class Primera_Pregunta extends AppCompatActivity {
          cambio_respuestas(categoria);
 
     }
-    public void cambio_activity(int punteo)//cambio activity
+    public void cambio_activity()//cambio activity
     {
        Intent i = new Intent(Primera_Pregunta.this,Segunda_Pregunta.class);
        i.putExtra("punteo",punteo);
@@ -50,14 +54,14 @@ public class Primera_Pregunta extends AppCompatActivity {
     }
     public void correcto(View view)//metodo para verificar respuesta
     {
-        int punteo= 0;//punteo, por defecto no tiene a menos que conteste bien
+        //punteo, por defecto no tiene a menos que conteste bien
         Button boton_press = (Button) findViewById(view.getId());
         String texto = boton_press.getText().toString();
         if(texto == Respuesta_Juego||texto == Respuesta_Mate||texto == Respuesta_Nac)//verifica si la respuesta es correcta
         {
            punteo= 1;//asigna el punteo
         }
-        cambio_activity(punteo);//llama al metodo de cambio de activity
+        mHandler.postDelayed(delay,2000);
     }
 
     private void cambio_respuestas(int categoría){
@@ -85,5 +89,13 @@ public class Primera_Pregunta extends AppCompatActivity {
                 break;
         }
     }
+
+    private  Runnable delay = new Runnable() {
+        @Override
+        public void run() {
+            cambio_activity();
+
+        }
+    };
 
 }

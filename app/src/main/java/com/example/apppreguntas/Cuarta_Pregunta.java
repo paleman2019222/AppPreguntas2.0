@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -20,7 +21,9 @@ public class Cuarta_Pregunta extends AppCompatActivity {
     String Respuesta_Juego = "puño";
     String Respuesta_Mate = "Aurelio Baldor";//
     String Respuesta_Nac = "Dr Ricardo Bressani";
-    String name;
+    String name;//nombre del jugador
+
+    private Handler mHandler = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +45,7 @@ public class Cuarta_Pregunta extends AppCompatActivity {
 
     }
 
-    public void cambio_activity(int punteo)//cambio activity
+    public void cambio_activity()//cambio activity
     {
         Intent i = new Intent(this, Quinta_Pregunta.class);
         i.putExtra("punteo", punteo);
@@ -61,7 +64,7 @@ public class Cuarta_Pregunta extends AppCompatActivity {
         {
             punteo = 1 + punteo;//asigna el punteo
         }
-        cambio_activity(punteo);//llama al metodo de cambio de activity
+        mHandler.postDelayed(delay,2000);//llama al metodo de cambio de activity
     }
 
     private void cambio_respuestas(int categoría) {
@@ -89,4 +92,12 @@ public class Cuarta_Pregunta extends AppCompatActivity {
                 break;
         }
     }
+
+    private  Runnable delay = new Runnable() {
+        @Override
+        public void run() {
+            cambio_activity();
+
+        }
+    };
 }

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".Primera_Pregunta"
     android:gravity="center_horizontal"
-    android:background="@drawable/idea_fondo">
+    android:background="@drawable/signos_20">
 
 
     <TextView
