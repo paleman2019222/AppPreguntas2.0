@@ -5,10 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Primera_Pregunta extends AppCompatActivity {
     Button res1,res2,res3,res4;
@@ -20,6 +24,7 @@ public class Primera_Pregunta extends AppCompatActivity {
     String Respuesta_Nac = "15 de septiembre";
     String name;//nombre del jugador
     int punteo= 0;
+    boolean verificador = false;
 
     private Handler mHandler = new Handler();
 
@@ -57,9 +62,20 @@ public class Primera_Pregunta extends AppCompatActivity {
         //punteo, por defecto no tiene a menos que conteste bien
         Button boton_press = (Button) findViewById(view.getId());
         String texto = boton_press.getText().toString();
+
+        res1.setEnabled(false);
+        res2.setEnabled(false);
+        res3.setEnabled(false);
+        res4.setEnabled(false);
+
         if(texto == Respuesta_Juego||texto == Respuesta_Mate||texto == Respuesta_Nac)//verifica si la respuesta es correcta
         {
            punteo= 1;//asigna el punteo
+            verificador = true;
+            toast("¡Respuesta correcta!", verificador);
+        }else{
+            verificador=false;
+            toast("¡Respuesta incorrecta!", verificador);
         }
         mHandler.postDelayed(delay,2000);
     }
@@ -97,5 +113,35 @@ public class Primera_Pregunta extends AppCompatActivity {
 
         }
     };
+
+    public void toast(String message, Boolean validar){
+
+        if(validar==true){
+            LayoutInflater layoutInflater = getLayoutInflater();
+            View view = layoutInflater.inflate(R.layout.layout_correcto, (ViewGroup) findViewById(R.id.customToast));
+            TextView mensaje = view.findViewById(R.id.txtMensajePersonalizado);
+            mensaje.setText(message);
+
+            Toast toast = new Toast(getApplicationContext());
+            toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.BOTTOM, 0,200);
+            toast.setDuration(Toast.LENGTH_SHORT);
+            toast.setView(view);
+            toast.show();
+        }else if(validar==false){
+            LayoutInflater layoutInflater = getLayoutInflater();
+            View view = layoutInflater.inflate(R.layout.layout_incorrecto, (ViewGroup) findViewById(R.id.customToast));
+            TextView mensaje = view.findViewById(R.id.txtMensajePersonalizado);
+            mensaje.setText(message);
+
+            Toast toast = new Toast(getApplicationContext());
+            toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.BOTTOM, 0,200);
+            toast.setDuration(Toast.LENGTH_SHORT);
+            toast.setView(view);
+            toast.show();
+        }
+
+
+
+    }
 
 }

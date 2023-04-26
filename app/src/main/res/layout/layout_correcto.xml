@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customToast"
+    android:background="@drawable/bk_green"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center|center_horizontal"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/check"/>
+
+    <TextView
+        android:id="@+id/txtMensajePersonalizado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textStyle="bold"
+        android:paddingStart="10dp"
+        android:text="¡Respuesta Correcta!"
+        android:textColor="#FFFFFF"
+        />
+
+
+</LinearLayout>
