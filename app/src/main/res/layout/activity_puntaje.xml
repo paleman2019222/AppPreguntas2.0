@@ -34,12 +34,36 @@
         android:textSize="30dp" />
 
 
+    <ImageView
+        android:id="@+id/imagenTriste"
+        android:layout_width="168dp"
+        android:layout_height="178dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/triste" />
+
+    <ImageView
+        android:id="@+id/imagenAvergonzado"
+        android:layout_width="168dp"
+        android:layout_height="178dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/avergonzado" />
+
+    <ImageView
+        android:id="@+id/imagenContento"
+        android:layout_width="168dp"
+        android:layout_height="178dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/contento" />
+
+
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/bttn_menu"
         style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="20dp"
+
         android:fontFamily="@font/hanalei_fill"
         android:onClick="cambio_activity"
         android:text="Menú"
