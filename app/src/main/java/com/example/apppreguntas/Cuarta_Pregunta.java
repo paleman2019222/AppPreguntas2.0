@@ -96,7 +96,7 @@ public class Cuarta_Pregunta extends AppCompatActivity {
                 res1.setText("Mi abuelita");
                 res2.setText("Corporación MUltiInversiones");
                 res3.setText(Respuesta_Nac);
-                res4.setText("Dr Manuel Villacorta");
+                res4.setText("Baldizón");
                 break;
             case 3: //juegos
                 Pregunta.setText("¿Con que parte del cuerpo, mario golpea los ladrillos en el videojuego Super Mario Bros?");
