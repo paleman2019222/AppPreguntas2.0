@@ -18,16 +18,19 @@ public class MainActivity extends AppCompatActivity {
     {
         Intent intent = new Intent(getApplicationContext(),Categorias.class);
         startActivity(intent);
+        finish();
     }
     public void cambio_a_Intrucciones(View view)
     {
         Intent intent = new Intent(getApplicationContext(),Instrucciones.class);
         startActivity(intent);
+        finish();
     }
     public void  cambio_a_AboutUs(View view)
     {
         Intent intent = new Intent(getApplicationContext(), AboutUs.class);
         startActivity(intent);
+        finish();
     }
 
 }
