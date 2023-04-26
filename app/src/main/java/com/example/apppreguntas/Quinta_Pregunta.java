@@ -96,7 +96,7 @@ public class Quinta_Pregunta extends AppCompatActivity {
                 res4.setText(Respuesta_Nac);
                 break;
             case 3: //juegos
-                Pregunta.setText("Juego de logica y baja calidad, donde su atraccion principal son cuadrados");
+                Pregunta.setText("Juego de lógica y baja calidad, donde su atracción principal son cuadrados");
                 res1.setText("Geometry dash");
                 res2.setText("mahjong");
                 res3.setText("Minecraft");

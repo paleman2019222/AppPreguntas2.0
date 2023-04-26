@@ -99,7 +99,7 @@ public class Cuarta_Pregunta extends AppCompatActivity {
                 res4.setText("Baldizón");
                 break;
             case 3: //juegos
-                Pregunta.setText("¿Con que parte del cuerpo, mario golpea los ladrillos en el videojuego Super Mario Bros?");
+                Pregunta.setText("¿Con qué parte del cuerpo, mario golpea los ladrillos en el videojuego Super Mario Bros?");
                 res1.setText("cabeza");
                 res2.setText(Respuesta_Juego);
                 res3.setText("caparazon");

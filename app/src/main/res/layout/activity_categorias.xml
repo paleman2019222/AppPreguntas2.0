@@ -63,7 +63,7 @@
         android:text="matemática"
         android:textColor="@color/white"
         android:textSize="30dp"
-        app:backgroundTint="#333333" />
+        app:backgroundTint="#0093ED" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/bttn_nacional"
@@ -78,7 +78,7 @@
         android:text="Nacional"
         android:textColor="@color/white"
         android:textSize="30dp"
-        app:backgroundTint="#333333" />
+        app:backgroundTint="#0093ED" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/bttn_juegos"
@@ -93,7 +93,7 @@
         android:text="Juegos"
         android:textColor="@color/white"
         android:textSize="30dp"
-        app:backgroundTint="#333333" />
+        app:backgroundTint="#0093ED" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/bttn_back"
@@ -104,8 +104,8 @@
         android:layout_marginTop="50dp"
         android:fontFamily="@font/hanalei_fill"
         android:onClick="regresar"
-        android:text="regresar"
+        android:text="Menú"
         android:textColor="@color/white"
         android:textSize="30dp"
-        app:backgroundTint="#333333" />
+        app:backgroundTint="#F21F42" />
 </RelativeLayout>

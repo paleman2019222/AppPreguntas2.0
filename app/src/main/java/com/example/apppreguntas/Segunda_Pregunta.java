@@ -94,7 +94,7 @@ public class Segunda_Pregunta extends AppCompatActivity {
                 res4.setText("Palomas de zona 1");
                 break;
             case 3: //juegos
-                Pregunta.setText("¿como se llama el hermano de mario en el videojuego Super Mario Bros?");
+                Pregunta.setText("¿Cómo se llama el hermano de mario en el videojuego Super Mario Bros?");
                 res1.setText("bowser");
                 res2.setText("warrio");
                 res3.setText("liuyi");

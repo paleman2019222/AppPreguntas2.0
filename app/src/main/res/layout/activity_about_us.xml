@@ -23,13 +23,25 @@
         android:textSize="48sp" />
 
     <TextView
+        android:id="@+id/programado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/borde"
+        android:fontFamily="@font/hanalei_fill"
+        android:text="Desarrollado por"
+        android:textColor="#FCC316"
+        android:textSize="38sp" />
+
+    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/hanalei_fill"
+        android:layout_marginTop="30dp"
         android:text="Pedro Canil"
         android:textColor="#FFFFFF"
-        android:textSize="48sp" />
+        android:textSize="28sp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -38,7 +50,7 @@
         android:fontFamily="@font/hanalei_fill"
         android:text="Samuel Citalán"
         android:textColor="#FFFFFF"
-        android:textSize="48sp" />
+        android:textSize="28sp" />
 
     <TextView
         android:id="@+id/textView4"
@@ -47,12 +59,13 @@
         android:fontFamily="@font/hanalei_fill"
         android:text="Pablo Alemán"
         android:textColor="#FFFFFF"
-        android:textSize="48sp" />
+        android:textSize="28sp" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="224dp"
         android:layout_height="281dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/villano" />
 
     <com.google.android.material.button.MaterialButton
@@ -60,13 +73,13 @@
         style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/hanalei_fill"
         android:onClick="regresar"
         android:text="Menú"
         android:textColor="@color/white"
         android:textSize="30dp"
-        app:backgroundTint="#333333" />
+        app:backgroundTint="#F21F42" />
 
 
 </LinearLayout>

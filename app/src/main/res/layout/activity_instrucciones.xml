@@ -52,7 +52,7 @@ tiene una oportunidad para responder"
         android:text="Menú"
         android:textColor="@color/white"
         android:textSize="30dp"
-        app:backgroundTint="#333333" />
+        app:backgroundTint="#F21F42" />
 
 
 </LinearLayout>
